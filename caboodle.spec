@@ -14,6 +14,7 @@ BuildRequires:  cairo-devel
 BuildRequires:  ocaml-lablgtk2-devel
 BuildRequires:  gtk+2-devel
 Requires:       gtk+2
+BuildRequires:  libglade2-devel
 
 %description
 Caboodle is a clone of the Flash game Planarity for
