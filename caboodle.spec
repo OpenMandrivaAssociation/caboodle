@@ -1,6 +1,6 @@
 Name:           caboodle
 Version:        0.5
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Clone of the Flash game Planarity
 License:        GNU/GPL>=2
 Group:          Games/Puzzles
