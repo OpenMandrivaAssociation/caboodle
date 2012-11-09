@@ -1,0 +1,26 @@
+--- Makefile	2006-11-04 21:49:57.000000000 +0100
++++ Makefile.new	2009-07-25 04:04:44.000000000 +0200
+@@ -1,4 +1,5 @@
+ PREFIX = /usr/local
++REALPREFIX = /usr/local
+ DESKTOPLOCATION = $(PREFIX)/share/applications
+ 
+ INSTALL = install
+@@ -14,13 +15,14 @@
+ 
+ install: build
+ 	$(MKDIR) -p build
+-	$(MKDIR) -m 755 -p $(PREFIX)/bin
++	$(MKDIR) -m 755 -p $(PREFIX)/games
+ 	$(MKDIR) -m 755 -p $(PREFIX)/share/caboodle
+ 	$(MKDIR) -m 755 -p $(DESKTOPLOCATION)
+-	$(SED) "s|PREFIX|$(PREFIX)|" caboodle.desktop > build/caboodle.desktop
++	$(SED) "s|PREFIX|$(REALPREFIX)|" caboodle.desktop > build/caboodle.desktop
+ 	$(INSTALL) -m 644 share/caboodle/caboodle.glade share/caboodle/caboodle.svg $(PREFIX)/share/caboodle
+-	$(INSTALL) -m 755 src/caboodle $(PREFIX)/bin
++	$(INSTALL) -m 755 src/caboodle $(PREFIX)/games/
+ 	$(INSTALL) -m 644 build/caboodle.desktop $(DESKTOPLOCATION)
++postinstall: install
+ 	update-desktop-database $(DESKTOPLOCATION)
+ 	
+ clean:
