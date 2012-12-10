@@ -1,7 +1,9 @@
---- caboodle.desktop	2006-11-04 21:49:57.000000000 +0100
-+++ caboodle.desktop.new	2009-07-26 21:16:51.000000000 +0200
-@@ -3,11 +3,12 @@
- Encoding=UTF-8
+--- caboodle.desktop    2006-11-04 21:49:57.000000000 +0100
++++ caboodle.desktop.new        2012-11-17 18:17:16.359533302 +0100
+@@ -1,14 +1,12 @@
+ [Desktop Entry]
+-Version=1.0
+-Encoding=UTF-8
  Name=Caboodle
  Comment=Arrangle the balls so no lines cross
 -TryExec=PREFIX/bin/caboodle
@@ -14,5 +16,6 @@
 -Categories=GNOME;Application;Game;PuzzleGame;
 +Categories=Game;LogicGame;
  Icon=PREFIX/share/caboodle/caboodle.svg
- GenericName[en_US]=
+-GenericName[en_US]=
  StartupNotify=true
+ MimeType=
