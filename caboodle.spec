@@ -18,11 +18,10 @@ BuildRequires:	pkgconfig(libglade-2.0)
 Requires:	gtk+2
 
 %description
-Caboodle is a clone of the Flash game Planarity for
-the GNOME desktop.
+Caboodle is a clone of the Flash game Planarity for the GNOME desktop.
 
-The objective of the game is to arrange the balls on
-the screen so that no lines cross.
+The objective of the game is to arrange the balls on the screen so that
+no lines cross.
 
 %files
 %doc COPYING README NEWS
@@ -42,9 +41,4 @@ make
 
 %install
 make install PREFIX=%{buildroot}%{_usr} REALPREFIX=%{_usr}
-
-
-
-
-
 
