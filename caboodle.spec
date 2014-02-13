@@ -10,6 +10,7 @@ Url:		http://juripakaste.fi/caboodle/
 Source0:	http://www.juripakaste.fi/store/dl/caboodle/releases/caboodle-%{version}.tar.gz
 Patch0:		caboodle-makefile.patch
 Patch1:		caboodle-desktop.patch
+BuildRequires:	ocaml
 BuildRequires:	ocaml-cairo-devel
 BuildRequires:	ocaml-lablgtk2-devel
 BuildRequires:	pkgconfig(cairo)
