@@ -3,7 +3,7 @@
 Summary:	Clone of the Flash game Planarity
 Name:		caboodle
 Version:	0.5
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Games/Puzzles
 Url:		http://juripakaste.fi/caboodle/
