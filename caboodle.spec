@@ -6,7 +6,7 @@ Version:	0.5
 Release:	4
 License:	GPLv2+
 Group:		Games/Puzzles
-Url:		http://juripakaste.fi/caboodle/
+Url:		https://juripakaste.fi/caboodle/
 Source0:	http://www.juripakaste.fi/store/dl/caboodle/releases/caboodle-%{version}.tar.gz
 Patch0:		caboodle-makefile.patch
 Patch1:		caboodle-desktop.patch
